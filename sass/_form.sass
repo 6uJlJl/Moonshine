@@ -1,0 +1,32 @@
+.form
+  display: flex
+  flex-direction: column
+  &-input
+    width: 306px
+    height: 45px
+    border-radius: 5px
+    border: 1px solid #6f6f6f
+    padding: 0 22px
+    font-family: "Century Gothic", sans-serif
+    font-size: 14px
+    line-height: 45px
+    font-weight: 400
+    outline-color: $main-color
+    margin-bottom: 14px
+    &::placeholder
+      color: #a0a0a0
+  &-button
+    width: 233px
+    height: 45px
+    border: none
+    box-shadow: 0 3px 0 #be9400, 0 0 13px rgba(255, 198, 0, 0.18)
+    border-radius: 5px
+    background-color: #000000
+    background-image: linear-gradient(to top, #ffc600 0%, #ffde00 100%)
+    outline-color: #be9400
+    font: inherit
+    font-size: 16px
+    font-weight: 500
+    cursor: pointer
+    &:hover
+      box-shadow: 0 1px 1px #be9400, 0 0 13px rgba(255, 198, 0, 0.18)

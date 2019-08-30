@@ -1,3 +1,5 @@
+$main-color: #ffc600
+
 html
   box-sizing: border-box
 
@@ -27,7 +29,7 @@ img
 
 a
   text-decoration: none
-  outline-color: #ffc600
+  outline-color: $main-color
   transition: .2s
 
 
@@ -50,4 +52,6 @@ p
   padding: 0 15px
   margin: 0 auto
 
+@import "form"
 @import "blocks/header"
+@import "blocks/top"
