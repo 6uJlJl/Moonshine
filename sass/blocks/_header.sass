@@ -8,6 +8,7 @@
     align-items: center
     list-style-type: none
     margin: 0
+    padding: 0
     min-height: 70px
     li:not(:last-child)
       margin-right: 40px
@@ -19,12 +20,60 @@
     li a:hover,
     li a:focus
       color: $main-color
+  &__phones
+    margin-top: 15px
+    padding-left: 55px
+    background: url("../img/viber.png") no-repeat left center
+    background-size: 45px
+    text-align: right
   &__phone
     color: #3c3c3c
     font-size: 24px
     font-weight: 500
-    line-height: 44px
+    line-height: 30px
     text-transform: uppercase
     &:focus,
     &:hover
       color: $main-color
+  &__burger
+    display: none
+    margin-right: 15px
+    height: 28px
+    width: 40px
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(19%, $main-color), color-stop(20%, transparent), color-stop(40%, transparent), color-stop(41%, $main-color), color-stop(60%, $main-color), color-stop(61%, transparent), color-stop(79%, transparent), color-stop(80%, $main-color))
+    background: -o-linear-gradient(bottom, $main-color 19%, transparent 20%, transparent 40%, $main-color 41%, $main-color 60%, transparent 61%, transparent 79%, $main-color 80%)
+    background: linear-gradient(to top, $main-color 19%, transparent 20%, transparent 40%, $main-color 41%, $main-color 60%, transparent 61%, transparent 79%, $main-color 80%)
+    cursor: pointer
+    &--active
+      height: 28px
+      width: 40px
+      background: -o-linear-gradient(45deg, transparent 45%, $main-color 46%, $main-color 55%, transparent 56%), -o-linear-gradient(135deg, transparent 45%, $main-color 46%, $main-color 55%, transparent 56%)
+      background: linear-gradient(45deg, transparent 45%, $main-color 46%, $main-color 55%, transparent 56%), linear-gradient(-45deg, transparent 45%, $main-color 46%, $main-color 55%, transparent 56%)
+
+@media (max-width: 1000px)
+  .header
+    &__burger
+      display: block
+    &__nav
+      position: fixed
+      top: 0
+      right: 0
+      padding: 15px 30px
+      flex-direction: column
+      align-items: flex-start
+      background-color: #ffffff
+      transform: translateX(100%)
+      li:not(:last-child)
+        margin: 0
+        padding: 0
+@media (max-width: 540px)
+  .header
+    &__phone
+      font-size: 22px
+@media (max-width: 425px)
+  .header
+    &__phone
+      font-size: 18px
+    &__phones
+      padding-left: 40px
+      background-size: 35px

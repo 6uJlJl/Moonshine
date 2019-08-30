@@ -11,7 +11,7 @@
     bottom: 40px
     background: #ffffff
     min-width: 257px
-    height: 117px
+    min-height: 117px
     box-shadow: 0 4px 0 #ffc600, 0 6px 13px rgba(0, 0, 0, 0.57)
     border-radius: 7px
     background-color: #ffffff
@@ -69,7 +69,6 @@
         font-weight: 700
         letter-spacing: 0.62px
 .offer
-
   &__title
     color: $main-color
     font-size: 18px
@@ -94,7 +93,111 @@
     font-weight: 400
     line-height: 13px
     span
+      display: block
+      width: 75px
       font-size: 16px
       line-height: 18px
       font-weight: 500
       text-decoration: line-through
+
+@media (max-width : 1200px)
+  .top
+    &__h1
+      font-size: 27px
+    &__image
+      margin-left: -100px
+
+@media (max-width : 1120px)
+  .top
+    &__h1
+      font-size: 22px
+      width: fit-content
+    &__subtitle
+      font-size: 21px
+    &__wrapper
+      justify-content: space-around
+    &__image
+      margin-left: -100px
+      margin-top: 40px
+
+@media (max-width : 1000px)
+  .top
+    &__image
+      width: 50%
+      margin-left: 0
+    &__h1
+      margin-top: 40px
+      font-size: 17px
+    &__subtitle
+      font-size: 16px
+    &__list
+      font-size: 15px
+    &__submit
+      flex-direction: column
+      align-items: flex-start
+      p
+        margin-left: 0
+
+@media (max-width : 768px)
+  .top
+    &__wrapper
+      flex-direction: column
+      align-items: center
+    &__image
+      width: 80%
+    &__h1
+      font-size: 25px
+    &__subtitle
+      font-size: 23px
+    &__list
+      font-size: 19px
+
+@media (max-width : 540px)
+  .top
+    &__image
+      width: 100%
+    &__h1
+      font-size: 18px
+    &__subtitle
+      font-size: 17px
+    &__list
+      font-size: 16px
+    &__offer
+      min-width: auto
+  .offer
+    &__price
+      flex-direction: column
+      font-size: 28px
+      font-weight: 700
+      padding-top: 0
+    &__price--after
+      font-size: 28px
+    &__price--before
+      font-size: 11px
+      span
+        display: inline-block
+
+@media (max-width : 425px)
+  .top
+    &__h1
+      padding: 0 7px
+      font-size: 15px
+    &__subtitle
+      font-size: 13px
+    &__list
+      font-size: 12px
+    &__offer
+      right: 0
+      bottom: 0
+  .offer
+    &__name
+      width: 150px
+      font-size: 13px
+    &__price
+      font-size: 20px
+    &__price--after
+      font-size: 20px
+    &__price--before
+      font-size: 10px
+      span
+        font-size: 14px
