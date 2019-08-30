@@ -216,12 +216,13 @@ p {
 @media (max-width: 1000px) {
   .header__burger {
     display: block;
+    z-index: 100;
   }
   .header__nav {
     position: fixed;
     top: 0;
     right: 0;
-    padding: 15px 30px;
+    padding: 55px 30px 15px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -232,10 +233,19 @@ p {
     background-color: #ffffff;
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    z-index: 10;
   }
   .header__nav li:not(:last-child) {
     margin: 0;
     padding: 0;
+  }
+  .header__nav.show {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
