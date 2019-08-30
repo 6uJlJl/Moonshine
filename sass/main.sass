@@ -52,6 +52,26 @@ p
   padding: 0 15px
   margin: 0 auto
 
+.button
+  display: flex
+  width: 233px
+  height: 45px
+  align-items: center
+  justify-content: center
+  box-shadow: 0 0 13px rgba(255, 198, 0, 0.18), 0 3px 0 #be9400
+  border-radius: 5px
+  background-color: #000000
+  background-image: linear-gradient(to top, #ffc600 0%, #ffde00 100%)
+  outline-color: #be9400
+  font: inherit
+  font-size: 16px
+  font-weight: 500
+  cursor: pointer
+  margin: 0 auto
+  &:hover
+    box-shadow: 0 1px 1px #be9400, 0 0 13px rgba(255, 198, 0, 0.18)
+
 @import "form"
 @import "blocks/header"
 @import "blocks/top"
+@import "blocks/offers"

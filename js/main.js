@@ -28,3 +28,20 @@ $("body").click (function(event){
   }
 
 })
+
+$('.dymka-15l-small-slider').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.dymka-15l-big-slider',
+  dots: true,
+  centerMode: true,
+  focusOnSelect: true
+});
+$('.dymka-15l-big-slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.dymka-15l-small-slider'
+});
+

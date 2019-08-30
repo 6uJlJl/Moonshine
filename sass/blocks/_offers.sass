@@ -1,0 +1,75 @@
+.offers
+  margin-top: 100px
+  &__items
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+  &__item
+    width: 30%
+    background-color: #ffffff
+    padding: 0 20px 20px
+    text-align: center
+    margin-bottom: 30px
+    box-shadow: 0 7px 16px rgba(0, 0, 0, 0.12)
+    border-radius: 7px
+    border: 1px solid #f4f4f4
+    position: relative
+.item
+  &__slider
+    padding: 0 20px
+  &__big-images
+    width: 270px
+    margin-bottom: 20px
+  &__small-images
+    height: 42px
+    img
+      border-radius: 50%
+  &__name
+    color: #181818
+    font-size: 24px
+    font-weight: 500
+    margin-bottom: 10px
+  &__details
+    display: flex
+    justify-content: space-between
+    color: #181818
+    font-size: 12px
+    line-height: 14px
+    font-weight: 400
+    margin-bottom: 15px
+    span
+      padding-top: 45px
+      width: 33%
+    &--v
+      background: url("../img/liter.png") no-repeat top center
+    &--kg
+      background: url("../img/weight.png") no-repeat top center
+    &--d
+      background: url("../img/diametr.png") no-repeat top center
+  &__prices
+    &--after
+      color: #ffc600
+      font-size: 35px
+      font-weight: 700
+    &--before
+      color: #c9c9c9
+      font-size: 20px
+      font-weight: 500
+      text-decoration: line-through
+  &__sale
+    position: absolute
+    display: block
+    width: 104px
+    line-height: 34px
+    top: 18px
+    left: -1px
+    background-color: #ffc600
+    color: #3c3c3c
+    font-size: 24px
+    font-weight: 400
+
+.item__small-images img
+  border: 1px solid transparent
+.item__small-images .slick-current
+  border: 1px solid $main-color
+  outline: none
