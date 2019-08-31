@@ -6,6 +6,7 @@
     justify-content: space-around
   &__item
     width: 350px
+
     background-color: #ffffff
     padding: 0 20px 20px
     text-align: center
@@ -19,11 +20,14 @@
     padding: 0 20px
   &__big-images
     width: 270px
+    min-height: 270px
     margin-bottom: 20px
   &__small-images
-    height: 42px
+    text-align: center
     img
       border-radius: 50%
+      max-width: 56px
+      height: 56px
   &__name
     color: #181818
     font-size: 24px
@@ -69,9 +73,8 @@
     font-size: 24px
     font-weight: 400
 
-.single
-  height: 330px
-
+.slick-track
+  text-align: center
 .item__small-images img
   border: 1px solid transparent
 .item__small-images .slick-current

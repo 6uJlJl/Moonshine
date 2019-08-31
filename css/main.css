@@ -636,7 +636,7 @@ p {
 @media (max-width: 425px) {
   .top__h1 {
     padding: 0 7px;
-    font-size: 15px;
+    font-size: 14px;
   }
   .top__subtitle {
     font-size: 13px;
@@ -703,15 +703,18 @@ p {
 
 .item__big-images {
   width: 270px;
+  min-height: 270px;
   margin-bottom: 20px;
 }
 
 .item__small-images {
-  height: 42px;
+  text-align: center;
 }
 
 .item__small-images img {
   border-radius: 50%;
+  max-width: 56px;
+  height: 56px;
 }
 
 .item__name {
@@ -779,8 +782,8 @@ p {
   font-weight: 400;
 }
 
-.single {
-  height: 330px;
+.slick-track {
+  text-align: center;
 }
 
 .item__small-images img {

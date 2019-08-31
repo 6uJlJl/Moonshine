@@ -35,7 +35,7 @@ $('.dymka-15l-small-slider').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   asNavFor: '.dymka-15l-big-slider',
-  dots: true,
+  dots: false,
   centerMode: true,
   focusOnSelect: true
 });
@@ -51,7 +51,7 @@ $('.germany-14l-small-slider').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   asNavFor: '.germany-14l-big-slider',
-  dots: true,
+  dots: false,
   centerMode: true,
   focusOnSelect: true
 });
@@ -67,7 +67,7 @@ $('.wein4-12l-small-slider').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   asNavFor: '.wein4-12l-big-slider',
-  dots: true,
+  dots: false,
   centerMode: true,
   focusOnSelect: true
 });
@@ -83,7 +83,7 @@ $('.wein4pro-20l-small-slider').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   asNavFor: '.wein4pro-20l-big-slider',
-  dots: true,
+  dots: false,
   centerMode: true,
   focusOnSelect: true
 });
@@ -99,7 +99,7 @@ $('.wein5-20l-small-slider').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   asNavFor: '.wein5-20l-big-slider',
-  dots: true,
+  dots: false,
   centerMode: true,
   focusOnSelect: true
 });
@@ -115,7 +115,7 @@ $('.wein5pro-37l-small-slider').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   asNavFor: '.wein5pro-37l-big-slider',
-  dots: true,
+  dots: false,
   centerMode: true,
   focusOnSelect: true
 });
@@ -133,7 +133,7 @@ $('.hanhi-10l-small-slider').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   asNavFor: '.hanhi-10l-big-slider',
-  dots: true,
+  dots: false,
   centerMode: true,
   focusOnSelect: true
 });
@@ -149,7 +149,7 @@ $('.hanhi-20l-small-slider').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   asNavFor: '.hanhi-20l-big-slider',
-  dots: true,
+  dots: false,
   centerMode: true,
   focusOnSelect: true
 });
@@ -165,7 +165,7 @@ $('.hanhi-30l-small-slider').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   asNavFor: '.hanhi-30l-big-slider',
-  dots: true,
+  dots: false,
   centerMode: true,
   focusOnSelect: true
 });
@@ -178,10 +178,10 @@ $('.hanhi-30l-big-slider').slick({
 });
 
 $('.hanhi-small-slider').slick({
-  slidesToShow: 3,
+  slidesToShow: 2,
   slidesToScroll: 1,
   asNavFor: '.hanhi-big-slider',
-  dots: true,
+  dots: false,
   centerMode: true,
   focusOnSelect: true
 });
@@ -191,4 +191,135 @@ $('.hanhi-big-slider').slick({
   arrows: false,
   fade: true,
   asNavFor: '.hanhi-small-slider'
+});
+
+$('.cold-50l-small-slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  asNavFor: '.cold-50l-big-slider',
+  dots: false,
+  centerMode: true,
+  focusOnSelect: true
+});
+$('.cold-50l-big-slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.cold-50l-small-slider'
+});
+
+$('.cold-32l-small-slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  asNavFor: '.cold-32l-big-slider',
+  dots: false,
+  centerMode: true,
+  focusOnSelect: true
+});
+$('.cold-32l-big-slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.cold-32l-small-slider'
+});
+
+
+
+// Слайдеры АВТОКЛАВЫ
+$('.bel-18l-small-slider').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.bel-18l-big-slider',
+  dots: false,
+  centerMode: true,
+  focusOnSelect: true
+});
+$('.bel-18l-big-slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.bel-18l-small-slider'
+});
+
+$('.bel-24l-small-slider').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.bel-24l-big-slider',
+  dots: false,
+  centerMode: true,
+  focusOnSelect: true
+});
+$('.bel-24l-big-slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.bel-24l-small-slider'
+});
+
+$('.bel-30l-small-slider').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.bel-30l-big-slider',
+  dots: false,
+  centerMode: true,
+  focusOnSelect: true
+});
+$('.bel-30l-big-slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.bel-30l-small-slider'
+});
+
+$('.av-hanhi-20l-small-slider').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.av-hanhi-20l-big-slider',
+  dots: false,
+  centerMode: true,
+  focusOnSelect: true
+});
+$('.av-hanhi-20l-big-slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.av-hanhi-20l-small-slider'
+});
+
+$('.av-fancel-23l-small-slider').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.av-fancel-23l-big-slider',
+  dots: false,
+  centerMode: true,
+  focusOnSelect: true
+});
+$('.av-fancel-23l-big-slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.av-fancel-23l-small-slider'
+});
+
+$('.av-fancel-37l-small-slider').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.av-fancel-37l-big-slider',
+  dots: false,
+  centerMode: true,
+  focusOnSelect: true
+});
+$('.av-fancel-37l-big-slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.av-fancel-37l-small-slider'
 });
