@@ -323,3 +323,69 @@ $('.av-fancel-37l-big-slider').slick({
   fade: true,
   asNavFor: '.av-fancel-37l-small-slider'
 });
+
+// Слайдеры ПИВОВАРНИ
+$('.piv-wein-37l-small-slider').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.piv-wein-37l-big-slider',
+  dots: false,
+  centerMode: true,
+  focusOnSelect: true
+});
+$('.piv-wein-37l-big-slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.piv-wein-37l-small-slider'
+});
+
+$('.piv-wein-30l-small-slider').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.piv-wein-30l-big-slider',
+  dots: false,
+  centerMode: true,
+  focusOnSelect: true
+});
+$('.piv-wein-30l-big-slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.piv-wein-30l-small-slider'
+});
+
+$('.piv-bav-30l-small-slider').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.piv-bav-30l-big-slider',
+  dots: false,
+  centerMode: true,
+  focusOnSelect: true
+});
+$('.piv-bav-30l-big-slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.piv-bav-30l-small-slider'
+});
+
+// Слайдер СЫРОВАРНИ
+$('.syr-15l-small-slider').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.syr-15l-big-slider',
+  dots: false,
+  centerMode: true,
+  focusOnSelect: true
+});
+$('.syr-15l-big-slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.syr-15l-small-slider'
+});
