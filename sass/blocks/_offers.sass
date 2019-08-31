@@ -3,13 +3,13 @@
   &__items
     display: flex
     flex-wrap: wrap
-    justify-content: space-between
+    justify-content: space-around
   &__item
-    width: 30%
+    width: 350px
     background-color: #ffffff
     padding: 0 20px 20px
     text-align: center
-    margin-bottom: 30px
+    margin: 30px 15px
     box-shadow: 0 7px 16px rgba(0, 0, 0, 0.12)
     border-radius: 7px
     border: 1px solid #f4f4f4
@@ -73,3 +73,15 @@
 .item__small-images .slick-current
   border: 1px solid $main-color
   outline: none
+@media (max-width: 768px)
+  .offers
+    margin-top: 60px
+    &__item
+      margin: 15px 15px
+@media (max-width: 425px)
+  .offers
+    &__item
+      width: 310px
+  .item
+    &__slider
+      padding: 0
