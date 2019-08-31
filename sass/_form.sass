@@ -31,16 +31,45 @@
     &:hover
       box-shadow: 0 1px 1px #be9400, 0 0 13px rgba(255, 198, 0, 0.18)
 
-  @media (max-width: 1000px)
-    .form
-      &-button
-        width: 306px
-        margin-bottom: 15px
-  @media (max-width : 425px)
-    .form
-      &-input
-        width: 290px
-        font-size: 13px
-      &-button
-        width: 290px
-        font-size: 14px
+.callback
+  margin-top: 60px
+  margin-bottom: 120px
+  &__form
+    text-align: center
+    input[type="text"],
+    input[type="tel"]
+      margin-right: 23px
+      text-align: center
+  &__title
+    color: #3c3c3c
+    font-size: 30px
+    font-weight: 500
+    line-height: 40px
+
+
+@media (max-width: 1000px)
+  .form
+    &-button
+      width: 306px
+      margin-bottom: 15px
+@media (max-width: 768px)
+  .callback
+    margin-top: 30px
+    margin-bottom: 60px
+    &__title
+      font-size: 23px
+    &__form
+      display: flex
+      flex-direction: column
+      align-items: center
+      input[type="text"],
+      input[type="tel"]
+        margin-right: 0
+@media (max-width : 425px)
+  .form
+    &-input
+      width: 290px
+      font-size: 13px
+    &-button
+      width: 290px
+      font-size: 14px

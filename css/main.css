@@ -149,19 +149,67 @@ p {
           box-shadow: 0 1px 1px #be9400, 0 0 13px rgba(255, 198, 0, 0.18);
 }
 
+.callback {
+  margin-top: 60px;
+  margin-bottom: 120px;
+}
+
+.callback__form {
+  text-align: center;
+}
+
+.callback__form input[type="text"],
+.callback__form input[type="tel"] {
+  margin-right: 23px;
+  text-align: center;
+}
+
+.callback__title {
+  color: #3c3c3c;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 40px;
+}
+
 @media (max-width: 1000px) {
-  .form .form-button {
+  .form-button {
     width: 306px;
     margin-bottom: 15px;
   }
 }
 
+@media (max-width: 768px) {
+  .callback {
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+  .callback__title {
+    font-size: 23px;
+  }
+  .callback__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .callback__form input[type="text"],
+  .callback__form input[type="tel"] {
+    margin-right: 0;
+  }
+}
+
 @media (max-width: 425px) {
-  .form .form-input {
+  .form-input {
     width: 290px;
     font-size: 13px;
   }
-  .form .form-button {
+  .form-button {
     width: 290px;
     font-size: 14px;
   }
@@ -310,6 +358,12 @@ p {
   position: relative;
 }
 
+.top__image--right {
+  margin-left: -50px;
+  margin-left: 0;
+  margin-right: -100px;
+}
+
 .top__offer {
   position: absolute;
   right: 40px;
@@ -322,6 +376,11 @@ p {
   border-radius: 7px;
   background-color: #ffffff;
   padding: 5px 12px;
+}
+
+.top__offer--right {
+  right: 100px;
+  bottom: 10px;
 }
 
 .top__offer p {
@@ -337,6 +396,10 @@ p {
   line-height: 48px;
   background-color: #ffc600;
   padding: 0 25px;
+}
+
+.top__h1--right {
+  margin-right: -50px;
 }
 
 .top__subtitle {
@@ -499,6 +562,7 @@ p {
   }
   .top__submit p {
     margin-left: 0;
+    margin-top: 10px;
   }
 }
 
@@ -514,6 +578,13 @@ p {
   }
   .top__image {
     width: 80%;
+  }
+  .top__image--right {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-right: 0;
+    margin-top: 0;
   }
   .top__h1 {
     font-size: 25px;
@@ -574,6 +645,10 @@ p {
     font-size: 12px;
   }
   .top__offer {
+    right: 0;
+    bottom: 0;
+  }
+  .top__offer--right {
     right: 0;
     bottom: 0;
   }
