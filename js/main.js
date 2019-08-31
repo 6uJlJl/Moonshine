@@ -29,7 +29,7 @@ $("body").click (function(event){
 
 })
 
-// СЛАЙДЕРЫ
+// СЛАЙДЕРЫ самогон
 
 $('.dymka-15l-small-slider').slick({
   slidesToShow: 3,
@@ -127,5 +127,68 @@ $('.wein5pro-37l-big-slider').slick({
   asNavFor: '.wein5pro-37l-small-slider'
 });
 
+// СЛАЙДЕРЫ коптильни
 
+$('.hanhi-10l-small-slider').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.hanhi-10l-big-slider',
+  dots: true,
+  centerMode: true,
+  focusOnSelect: true
+});
+$('.hanhi-10l-big-slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.hanhi-10l-small-slider'
+});
 
+$('.hanhi-20l-small-slider').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.hanhi-20l-big-slider',
+  dots: true,
+  centerMode: true,
+  focusOnSelect: true
+});
+$('.hanhi-20l-big-slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.hanhi-20l-small-slider'
+});
+
+$('.hanhi-30l-small-slider').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.hanhi-30l-big-slider',
+  dots: true,
+  centerMode: true,
+  focusOnSelect: true
+});
+$('.hanhi-30l-big-slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.hanhi-30l-small-slider'
+});
+
+$('.hanhi-small-slider').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.hanhi-big-slider',
+  dots: true,
+  centerMode: true,
+  focusOnSelect: true
+});
+$('.hanhi-big-slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.hanhi-small-slider'
+});
