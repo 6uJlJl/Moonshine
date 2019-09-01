@@ -41,7 +41,7 @@
   <main>
 
     <!-- САМОГОН -->
-    <section class="top">
+    <section class="top" id="header">
       <div class="container">
         <div class="top__wrapper">
           <div class="top__image">
@@ -69,13 +69,14 @@
               <li><b>Аргоновая</b> сварка швов</li>
               <li>Экологическая <b>пищевая</b> сталь</li>
             </ul>
-            <form class="form" action="post">
+            <form class="form" method="post" action="callback.php">
               <label class="visually-hidden" for="top-name">Введите Ваше имя</label>
               <input class="form-input" type="text" name="name" id="top-name" placeholder="Введите Ваше имя" required>
               <label class="visually-hidden" for="top-phone">Введите Ваш номер телефона</label>
               <input class="form-input" type="tel" name="phone" placeholder="Введите Ваш номер телефона" id="top-phone">
+              <input type="hidden" name="section" value="Секция Самогонные аппараты">
               <div class="top__submit">
-                  <input class="form-button"type="submit" value="Оформить заказ">
+                  <input class="form-button" type="submit" value="Оформить заказ">
                   <p>УЗНАЙТЕ как получить<br> дополнительную <span>СКИДКУ прямо сейчас</span></p>
               </div>
             </form>
@@ -127,8 +128,8 @@
               <span class="item__prices--before">7 390 р.</span>
             </p>
             <!-- /.item__prices -->
-            <a href="" class="button .item__order">Оформить заказ</a>
-            <!-- /.item__order -->
+            <a href="" class="button item__order">Оформить заказ</a>
+            <!-- /item__order -->
             <span class="item__sale">sale %</span>
           </div>
           <!-- /.offers__item -->
@@ -169,8 +170,8 @@
                 <span class="item__prices--before">10 190 р.</span>
               </p>
               <!-- /.item__prices -->
-              <a href="" class="button .item__order">Оформить заказ</a>
-              <!-- /.item__order -->
+              <a href="" class="button item__order">Оформить заказ</a>
+              <!-- /item__order -->
               <span class="item__sale">sale %</span>
           </div>
           <!-- /.offers__item -->
@@ -208,8 +209,8 @@
                 <span class="item__prices--before">15 490 р.</span>
               </p>
               <!-- /.item__prices -->
-              <a href="" class="button .item__order">Оформить заказ</a>
-              <!-- /.item__order -->
+              <a href="" class="button item__order">Оформить заказ</a>
+              <!-- /item__order -->
               <span class="item__sale">sale %</span>
           </div>
           <!-- /.offers__item -->
@@ -251,8 +252,8 @@
                 <span class="item__prices--before"></span>
               </p>
               <!-- /.item__prices -->
-              <a href="" class="button .item__order">Оформить заказ</a>
-              <!-- /.item__order -->
+              <a href="" class="button item__order">Оформить заказ</a>
+              <!-- /item__order -->
               <span class="item__sale">sale %</span>
           </div>
           <!-- /.offers__item -->
@@ -294,8 +295,8 @@
                 <span class="item__prices--before">21 990 р.</span>
               </p>
               <!-- /.item__prices -->
-              <a href="" class="button .item__order">Оформить заказ</a>
-              <!-- /.item__order -->
+              <a href="" class="button item__order">Оформить заказ</a>
+              <!-- /item__order -->
               <span class="item__sale">sale %</span>
           </div>
           <!-- /.offers__item -->
@@ -337,8 +338,8 @@
                 <span class="item__prices--before"></span>
               </p>
               <!-- /.item__prices -->
-              <a href="" class="button .item__order">Оформить заказ</a>
-              <!-- /.item__order -->
+              <a href="" class="button item__order">Оформить заказ</a>
+              <!-- /item__order -->
               <span class="item__sale">sale %</span>
           </div>
           <!-- /.offers__item -->
@@ -351,12 +352,13 @@
 
     <section class="callback">
       <div class="container">
-        <form action="post" class="callback__form">
+        <h2 class="visually-hidden">Форма заказа обратного звонка</h2>
+        <form method="post" action="callback.php" class="callback__form">
           <p class="callback__title">Остались вопросы? Оставьте свой номер и мы с Вами свяжемся!</p>
-          <label class="visually-hidden" for="top-name">Введите Ваше имя</label>
-          <input class="form-input" type="text" name="name" id="top-name" placeholder="Введите Ваше имя" required>
-          <label class="visually-hidden" for="top-phone">Введите Ваш номер телефона</label>
-          <input class="form-input" type="tel" name="phone" placeholder="Введите Ваш номер телефона" id="top-phone">
+          <label class="visually-hidden" for="offers-name">Введите Ваше имя</label>
+          <input class="form-input" type="text" name="name" id="offers-name" placeholder="Введите Ваше имя" required>
+          <label class="visually-hidden" for="offers-phone">Введите Ваш номер телефона</label>
+          <input class="form-input" type="tel" name="phone" placeholder="Введите Ваш номер телефона" id="offers-phone">
           <input class="form-button" type="submit" value="Заказать звонок">
         </form>
         <!-- /.callback__form -->
@@ -366,7 +368,7 @@
     <!-- /.callback -->
 
     <!-- КОПТИЛЬНИ -->
-    <section class="top">
+    <section class="top" id="koptil">
       <div class="container">
         <div class="top__wrapper">
           <div class="top__title">
@@ -381,13 +383,14 @@
               <li><b>Герметичная</b> конструкция</li>
               <li>Для <b>любых источников</b> нагрева</li>
             </ul>
-            <form class="form" action="post">
-              <label class="visually-hidden" for="top-name">Введите Ваше имя</label>
-              <input class="form-input" type="text" name="name" id="top-name" placeholder="Введите Ваше имя" required>
-              <label class="visually-hidden" for="top-phone">Введите Ваш номер телефона</label>
-              <input class="form-input" type="tel" name="phone" placeholder="Введите Ваш номер телефона" id="top-phone">
+            <form class="form" method="post" action="callback.php">
+              <label class="visually-hidden" for="koptil-name">Введите Ваше имя</label>
+              <input class="form-input" type="text" name="name" id="koptil-name" placeholder="Введите Ваше имя" required>
+              <label class="visually-hidden" for="koptil-phone">Введите Ваш номер телефона</label>
+              <input class="form-input" type="tel" name="phone" placeholder="Введите Ваш номер телефона" id="koptil-phone">
+              <input type="hidden" name="section" value="Секция Коптильни">
               <div class="top__submit">
-                  <input class="form-button"type="submit" value="Оформить заказ">
+                  <input class="form-button" type="submit" value="Оформить заказ">
                   <p>УЗНАЙТЕ как получить<br> дополнительную <span>СКИДКУ прямо сейчас</span></p>
               </div>
             </form>
@@ -453,8 +456,8 @@
               <span class="item__prices--before">6 190 р.</span>
             </p>
             <!-- /.item__prices -->
-            <a href="" class="button .item__order">Оформить заказ</a>
-            <!-- /.item__order -->
+            <a href="" class="button item__order">Оформить заказ</a>
+            <!-- /item__order -->
             <span class="item__sale">sale %</span>
           </div>
           <!-- /.offers__item -->
@@ -496,8 +499,8 @@
                 <span class="item__prices--before">7 890 р.</span>
               </p>
               <!-- /.item__prices -->
-              <a href="" class="button .item__order">Оформить заказ</a>
-              <!-- /.item__order -->
+              <a href="" class="button item__order">Оформить заказ</a>
+              <!-- /item__order -->
               <span class="item__sale">sale %</span>
           </div>
           <!-- /.offers__item -->
@@ -539,8 +542,8 @@
                 <span class="item__prices--before">9 390 р.</span>
               </p>
               <!-- /.item__prices -->
-              <a href="" class="button .item__order">Оформить заказ</a>
-              <!-- /.item__order -->
+              <a href="" class="button item__order">Оформить заказ</a>
+              <!-- /item__order -->
               <span class="item__sale">sale %</span>
           </div>
           <!-- /.offers__item -->
@@ -568,8 +571,8 @@
                 <span class="item__prices--before"></span>
               </p>
               <!-- /.item__prices -->
-              <a href="" class="button .item__order">Оформить заказ</a>
-              <!-- /.item__order -->
+              <a href="" class="button item__order">Оформить заказ</a>
+              <!-- /item__order -->
               <span class="item__sale">sale %</span>
           </div>
           <!-- /.offers__item -->
@@ -597,8 +600,8 @@
                 <span class="item__prices--before">5 300 р.</span>
               </p>
               <!-- /.item__prices -->
-              <a href="" class="button .item__order">Оформить заказ</a>
-              <!-- /.item__order -->
+              <a href="" class="button item__order">Оформить заказ</a>
+              <!-- /item__order -->
               <span class="item__sale">sale %</span>
           </div>
           <!-- /.offers__item -->
@@ -628,8 +631,8 @@
                 <span class="item__prices--before"></span>
               </p>
               <!-- /.item__prices -->
-              <a href="" class="button .item__order">Оформить заказ</a>
-              <!-- /.item__order -->
+              <a href="" class="button item__order">Оформить заказ</a>
+              <!-- /item__order -->
               <span class="item__sale">sale %</span>
           </div>
           <!-- /.offers__item -->
@@ -642,12 +645,13 @@
 
     <section class="callback">
         <div class="container">
-          <form action="post" class="callback__form">
+          <h2 class="visually-hidden">Форма заказа обратного звонка</h2>
+          <form method="post" action="callback.php" class="callback__form">
             <p class="callback__title">Остались вопросы? Оставьте свой номер и мы с Вами свяжемся!</p>
-            <label class="visually-hidden" for="top-name">Введите Ваше имя</label>
-            <input class="form-input" type="text" name="name" id="top-name" placeholder="Введите Ваше имя" required>
-            <label class="visually-hidden" for="top-phone">Введите Ваш номер телефона</label>
-            <input class="form-input" type="tel" name="phone" placeholder="Введите Ваш номер телефона" id="top-phone">
+            <label class="visually-hidden" for="koptil1-name">Введите Ваше имя</label>
+            <input class="form-input" type="text" name="name" id="koptil1-name" placeholder="Введите Ваше имя" required>
+            <label class="visually-hidden" for="koptil1-phone">Введите Ваш номер телефона</label>
+            <input class="form-input" type="tel" name="phone" placeholder="Введите Ваш номер телефона" id="koptil1-phone">
             <input class="form-button" type="submit" value="Заказать звонок">
           </form>
           <!-- /.callback__form -->
@@ -657,7 +661,7 @@
     <!-- /.callback -->
 
     <!-- АВТОКЛАВЫ -->
-    <section class="top">
+    <section class="top" id="avtoklav">
       <div class="container">
         <div class="top__wrapper">
           <div class="top__image">
@@ -684,13 +688,14 @@
               <li><b>Ничего</b> не сгорит и не загорчит</li>
               <li>Подходят плиты <b>любого типа</b></li>
             </ul>
-            <form class="form" action="post">
-              <label class="visually-hidden" for="top-name">Введите Ваше имя</label>
-              <input class="form-input" type="text" name="name" id="top-name" placeholder="Введите Ваше имя" required>
-              <label class="visually-hidden" for="top-phone">Введите Ваш номер телефона</label>
-              <input class="form-input" type="tel" name="phone" placeholder="Введите Ваш номер телефона" id="top-phone">
+            <form class="form" method="post" action="callback.php">
+              <label class="visually-hidden" for="avtoklav-name">Введите Ваше имя</label>
+              <input class="form-input" type="text" name="name" id="avtoklav-name" placeholder="Введите Ваше имя" required>
+              <label class="visually-hidden" for="avtoklav-phone">Введите Ваш номер телефона</label>
+              <input class="form-input" type="tel" name="phone" placeholder="Введите Ваш номер телефона" id="avtoklav-phone">
+              <input type="hidden" name="section" value="Секция бытовые Автоклавы">
               <div class="top__submit">
-                  <input class="form-button"type="submit" value="Оформить заказ">
+                  <input class="form-button" type="submit" value="Оформить заказ">
                   <p>УЗНАЙТЕ как получить<br> дополнительную <span>СКИДКУ прямо сейчас</span></p>
               </div>
             </form>
@@ -736,8 +741,8 @@
               <span class="item__prices--before">7 590 р.</span>
             </p>
             <!-- /.item__prices -->
-            <a href="" class="button .item__order">Оформить заказ</a>
-            <!-- /.item__order -->
+            <a href="" class="button item__order">Оформить заказ</a>
+            <!-- /item__order -->
             <span class="item__sale">sale %</span>
           </div>
           <!-- /.offers__item -->
@@ -771,8 +776,8 @@
               <span class="item__prices--before">8 490 р.</span>
             </p>
             <!-- /.item__prices -->
-            <a href="" class="button .item__order">Оформить заказ</a>
-            <!-- /.item__order -->
+            <a href="" class="button item__order">Оформить заказ</a>
+            <!-- /item__order -->
             <span class="item__sale">sale %</span>
           </div>
           <!-- /.offers__item -->
@@ -806,8 +811,8 @@
               <span class="item__prices--before">9 390 р.</span>
             </p>
             <!-- /.item__prices -->
-            <a href="" class="button .item__order">Оформить заказ</a>
-            <!-- /.item__order -->
+            <a href="" class="button item__order">Оформить заказ</a>
+            <!-- /item__order -->
             <span class="item__sale">sale %</span>
           </div>
           <!-- /.offers__item -->
@@ -841,8 +846,8 @@
                 <span class="item__prices--before">12 590 р.</span>
               </p>
               <!-- /.item__prices -->
-              <a href="" class="button .item__order">Оформить заказ</a>
-              <!-- /.item__order -->
+              <a href="" class="button item__order">Оформить заказ</a>
+              <!-- /item__order -->
               <span class="item__sale">sale %</span>
           </div>
           <!-- /.offers__item -->
@@ -882,8 +887,8 @@
                 <span class="item__prices--before">13 990 р.</span>
               </p>
               <!-- /.item__prices -->
-              <a href="" class="button .item__order">Оформить заказ</a>
-              <!-- /.item__order -->
+              <a href="" class="button item__order">Оформить заказ</a>
+              <!-- /item__order -->
               <span class="item__sale">sale %</span>
           </div>
           <!-- /.offers__item -->
@@ -917,8 +922,8 @@
               <span class="item__prices--before">16 350 р.</span>
             </p>
             <!-- /.item__prices -->
-            <a href="" class="button .item__order">Оформить заказ</a>
-            <!-- /.item__order -->
+            <a href="" class="button item__order">Оформить заказ</a>
+            <!-- /item__order -->
             <span class="item__sale">sale %</span>
           </div>
           <!-- /.offers__item -->
@@ -931,12 +936,13 @@
 
     <section class="callback">
       <div class="container">
-        <form action="post" class="callback__form">
+        <h2 class="visually-hidden">Форма заказа обратного звонка</h2>
+        <form method="post" action="callback.php" class="callback__form">
           <p class="callback__title">Остались вопросы? Оставьте свой номер и мы с Вами свяжемся!</p>
-          <label class="visually-hidden" for="top-name">Введите Ваше имя</label>
-          <input class="form-input" type="text" name="name" id="top-name" placeholder="Введите Ваше имя" required>
-          <label class="visually-hidden" for="top-phone">Введите Ваш номер телефона</label>
-          <input class="form-input" type="tel" name="phone" placeholder="Введите Ваш номер телефона" id="top-phone">
+          <label class="visually-hidden" for="avtoklav1-name">Введите Ваше имя</label>
+          <input class="form-input" type="text" name="name" id="avtoklav1-name" placeholder="Введите Ваше имя" required>
+          <label class="visually-hidden" for="avtoklav1-phone">Введите Ваш номер телефона</label>
+          <input class="form-input" type="tel" name="phone" placeholder="Введите Ваш номер телефона" id="avtoklav1-phone">
           <input class="form-button" type="submit" value="Заказать звонок">
         </form>
         <!-- /.callback__form -->
@@ -946,7 +952,7 @@
     <!-- /.callback -->
 
     <!-- ПИВОВАРНИ -->
-    <section class="top">
+    <section class="top" id="pivovar">
       <div class="container">
         <div class="top__wrapper">
           <div class="top__title">
@@ -961,13 +967,14 @@
               <li>Полная <b>фильтрация</b></li>
               <li><b>Жесткая</b> конструкция</li>
             </ul>
-            <form class="form" action="post">
-              <label class="visually-hidden" for="top-name">Введите Ваше имя</label>
-              <input class="form-input" type="text" name="name" id="top-name" placeholder="Введите Ваше имя" required>
-              <label class="visually-hidden" for="top-phone">Введите Ваш номер телефона</label>
-              <input class="form-input" type="tel" name="phone" placeholder="Введите Ваш номер телефона" id="top-phone">
+            <form method="post" action="callback.php">
+              <label class="visually-hidden" for="pivovar-name">Введите Ваше имя</label>
+              <input class="form-input" type="text" name="name" id="pivovar-name" placeholder="Введите Ваше имя" required>
+              <label class="visually-hidden" for="pivovar-phone">Введите Ваш номер телефона</label>
+              <input class="form-input" type="tel" name="phone" placeholder="Введите Ваш номер телефона" id="pivovar-phone">
+              <input type="hidden" name="section" value="Секция домашние Пивоварни">
               <div class="top__submit">
-                  <input class="form-button"type="submit" value="Оформить заказ">
+                  <input class="form-button" type="submit" value="Оформить заказ">
                   <p>УЗНАЙТЕ как получить<br> дополнительную <span>СКИДКУ прямо сейчас</span></p>
               </div>
             </form>
@@ -1032,8 +1039,8 @@
               <span class="item__prices--before">43 290 р.</span>
             </p>
             <!-- /.item__prices -->
-            <a href="" class="button .item__order">Оформить заказ</a>
-            <!-- /.item__order -->
+            <a href="" class="button item__order">Оформить заказ</a>
+            <!-- /item__order -->
             <span class="item__sale">sale %</span>
           </div>
           <!-- /.offers__item -->
@@ -1072,8 +1079,8 @@
               <span class="item__prices--before">12 790 р.</span>
             </p>
             <!-- /.item__prices -->
-            <a href="" class="button .item__order">Оформить заказ</a>
-            <!-- /.item__order -->
+            <a href="" class="button item__order">Оформить заказ</a>
+            <!-- /item__order -->
             <span class="item__sale">sale %</span>
           </div>
           <!-- /.offers__item -->
@@ -1112,8 +1119,8 @@
                 <span class="item__prices--before">42 990 р.</span>
               </p>
               <!-- /.item__prices -->
-              <a href="" class="button .item__order">Оформить заказ</a>
-              <!-- /.item__order -->
+              <a href="" class="button item__order">Оформить заказ</a>
+              <!-- /item__order -->
               <span class="item__sale">sale %</span>
             </div>
             <!-- /.offers__item -->
@@ -1126,12 +1133,13 @@
 
     <section class="callback">
       <div class="container">
-        <form action="post" class="callback__form">
+        <h2 class="visually-hidden">Форма заказа обратного звонка</h2>
+        <form method="post" action="callback.php" class="callback__form">
           <p class="callback__title">Остались вопросы? Оставьте свой номер и мы с Вами свяжемся!</p>
-          <label class="visually-hidden" for="top-name">Введите Ваше имя</label>
-          <input class="form-input" type="text" name="name" id="top-name" placeholder="Введите Ваше имя" required>
-          <label class="visually-hidden" for="top-phone">Введите Ваш номер телефона</label>
-          <input class="form-input" type="tel" name="phone" placeholder="Введите Ваш номер телефона" id="top-phone">
+          <label class="visually-hidden" for="pivovar1-name">Введите Ваше имя</label>
+          <input class="form-input" type="text" name="name" id="pivovar1-name" placeholder="Введите Ваше имя" required>
+          <label class="visually-hidden" for="pivovar1-phone">Введите Ваш номер телефона</label>
+          <input class="form-input" type="tel" name="phone" placeholder="Введите Ваш номер телефона" id="pivovar1-phone">
           <input class="form-button" type="submit" value="Заказать звонок">
         </form>
         <!-- /.callback__form -->
@@ -1141,7 +1149,7 @@
     <!-- /.callback -->
 
     <!-- СЫРОВАРНИ -->
-    <section class="top">
+    <section class="top" id="syrovar">
         <div class="container">
           <div class="top__wrapper">
             <div class="top__image">
@@ -1168,13 +1176,14 @@
                 <li><b>Богатая</b> комплектация</li>
                 <li><b>Простая и продуманная</b> конструкция</li>
               </ul>
-              <form class="form" action="post">
-                <label class="visually-hidden" for="top-name">Введите Ваше имя</label>
-                <input class="form-input" type="text" name="name" id="top-name" placeholder="Введите Ваше имя" required>
-                <label class="visually-hidden" for="top-phone">Введите Ваш номер телефона</label>
-                <input class="form-input" type="tel" name="phone" placeholder="Введите Ваш номер телефона" id="top-phone">
+              <form class="form" method="post" action="callback.php">
+                <label class="visually-hidden" for="cheese-name">Введите Ваше имя</label>
+                <input class="form-input" type="text" name="name" id="cheese-name" placeholder="Введите Ваше имя" required>
+                <label class="visually-hidden" for="cheese-phone">Введите Ваш номер телефона</label>
+                <input class="form-input" type="tel" name="phone" placeholder="Введите Ваш номер телефона" id="cheese-phone">
+                <input type="hidden" name="section" value="Секция Сыроварни">
                 <div class="top__submit">
-                    <input class="form-button"type="submit" value="Оформить заказ">
+                    <input class="form-button" type="submit" value="Оформить заказ">
                     <p>УЗНАЙТЕ как получить<br> дополнительную <span>СКИДКУ прямо сейчас</span></p>
                 </div>
               </form>
@@ -1220,8 +1229,8 @@
               <span class="item__prices--before">10 290 р.</span>
             </p>
             <!-- /.item__prices -->
-            <a href="" class="button .item__order">Оформить заказ</a>
-            <!-- /.item__order -->
+            <a href="" class="button item__order">Оформить заказ</a>
+            <!-- /item__order -->
             <span class="item__sale">sale %</span>
           </div>
           <!-- /.offers__item -->
@@ -1234,12 +1243,13 @@
 
     <section class="callback">
       <div class="container">
-        <form action="post" class="callback__form">
+        <h2 class="visually-hidden">Форма заказа обратного звонка</h2>
+        <form method="post" action="callback.php" class="callback__form">
           <p class="callback__title">Остались вопросы? Оставьте свой номер и мы с Вами свяжемся!</p>
-          <label class="visually-hidden" for="top-name">Введите Ваше имя</label>
-          <input class="form-input" type="text" name="name" id="top-name" placeholder="Введите Ваше имя" required>
-          <label class="visually-hidden" for="top-phone">Введите Ваш номер телефона</label>
-          <input class="form-input" type="tel" name="phone" placeholder="Введите Ваш номер телефона" id="top-phone">
+          <label class="visually-hidden" for="cheese1-name">Введите Ваше имя</label>
+          <input class="form-input" type="text" name="name" id="cheese1-name" placeholder="Введите Ваше имя" required>
+          <label class="visually-hidden" for="cheese1-phone">Введите Ваш номер телефона</label>
+          <input class="form-input" type="tel" name="phone" placeholder="Введите Ваш номер телефона" id="cheese1-phone">
           <input class="form-button" type="submit" value="Заказать звонок">
         </form>
         <!-- /.callback__form -->
@@ -1275,8 +1285,8 @@
         </nav>
         <!-- /.footer__nav -->
         <div class="footer__socials">
-          <a class="footer__social footer__social--vk" href="http://vk.com" target="_blanc">Вконтакте</a>
-          <a class="footer__social footer__social--ins" href="http://instagram.com" target="_blanc">Instagram</a>
+          <a class="footer__social footer__social--vk" href="http://vk.com" target="_blank">Вконтакте</a>
+          <a class="footer__social footer__social--ins" href="http://instagram.com" target="_blank">Instagram</a>
         </div>
         <!-- /.socials -->
         <div class="header__phones">
@@ -1293,6 +1303,7 @@
   <script src="/js/jquery-3.4.1.min.js" defer></script>
   <script src="/js/jquery.fancybox.min.js" defer></script>
   <script src="/js/slick.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js" defer></script>
   <script src="/js/main.js" defer></script>
 </body>
 </html>

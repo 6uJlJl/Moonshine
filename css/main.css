@@ -19,6 +19,7 @@ body {
   font-size: 16px;
   line-height: 29px;
   background-color: #f1f1f1;
+  overflow-x: hidden;
 }
 
 img {
@@ -171,6 +172,19 @@ p {
   line-height: 40px;
 }
 
+.popup__title {
+  text-align: center;
+  color: #3c3c3c;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 40px;
+  max-width: 306px;
+}
+
+.popup-submit {
+  width: 306px;
+}
+
 @media (max-width: 1000px) {
   .form-button {
     width: 306px;
@@ -212,6 +226,13 @@ p {
   .form-button {
     width: 290px;
     font-size: 14px;
+  }
+  .popup__title {
+    font-size: 14px;
+    max-width: 290px;
+  }
+  .popup-submit {
+    width: 290px;
   }
 }
 
@@ -708,7 +729,10 @@ p {
 }
 
 .offers__item {
-  width: 350px;
+  max-width: 350px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
   background-color: #ffffff;
   padding: 0 20px 20px;
   text-align: center;
@@ -829,7 +853,7 @@ p {
 
 @media (max-width: 425px) {
   .offers__item {
-    width: 310px;
+    max-width: 310px;
   }
   .item__slider {
     padding: 0;

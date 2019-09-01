@@ -36,6 +36,7 @@ $('.dymka-15l-small-slider').slick({
   slidesToScroll: 1,
   asNavFor: '.dymka-15l-big-slider',
   dots: false,
+  arrows: false,
   centerMode: true,
   focusOnSelect: true
 });
@@ -52,6 +53,7 @@ $('.germany-14l-small-slider').slick({
   slidesToScroll: 1,
   asNavFor: '.germany-14l-big-slider',
   dots: false,
+  arrows: false,
   centerMode: true,
   focusOnSelect: true
 });
@@ -68,6 +70,7 @@ $('.wein4-12l-small-slider').slick({
   slidesToScroll: 1,
   asNavFor: '.wein4-12l-big-slider',
   dots: false,
+  arrows: false,
   centerMode: true,
   focusOnSelect: true
 });
@@ -84,6 +87,7 @@ $('.wein4pro-20l-small-slider').slick({
   slidesToScroll: 1,
   asNavFor: '.wein4pro-20l-big-slider',
   dots: false,
+  arrows: false,
   centerMode: true,
   focusOnSelect: true
 });
@@ -100,6 +104,7 @@ $('.wein5-20l-small-slider').slick({
   slidesToScroll: 1,
   asNavFor: '.wein5-20l-big-slider',
   dots: false,
+  arrows: false,
   centerMode: true,
   focusOnSelect: true
 });
@@ -116,6 +121,7 @@ $('.wein5pro-37l-small-slider').slick({
   slidesToScroll: 1,
   asNavFor: '.wein5pro-37l-big-slider',
   dots: false,
+  arrows: false,
   centerMode: true,
   focusOnSelect: true
 });
@@ -134,6 +140,7 @@ $('.hanhi-10l-small-slider').slick({
   slidesToScroll: 1,
   asNavFor: '.hanhi-10l-big-slider',
   dots: false,
+  arrows: false,
   centerMode: true,
   focusOnSelect: true
 });
@@ -150,6 +157,7 @@ $('.hanhi-20l-small-slider').slick({
   slidesToScroll: 1,
   asNavFor: '.hanhi-20l-big-slider',
   dots: false,
+  arrows: false,
   centerMode: true,
   focusOnSelect: true
 });
@@ -166,6 +174,7 @@ $('.hanhi-30l-small-slider').slick({
   slidesToScroll: 1,
   asNavFor: '.hanhi-30l-big-slider',
   dots: false,
+  arrows: false,
   centerMode: true,
   focusOnSelect: true
 });
@@ -182,6 +191,7 @@ $('.hanhi-small-slider').slick({
   slidesToScroll: 1,
   asNavFor: '.hanhi-big-slider',
   dots: false,
+  arrows: false,
   centerMode: true,
   focusOnSelect: true
 });
@@ -198,6 +208,7 @@ $('.cold-50l-small-slider').slick({
   slidesToScroll: 1,
   asNavFor: '.cold-50l-big-slider',
   dots: false,
+  arrows: false,
   centerMode: true,
   focusOnSelect: true
 });
@@ -214,6 +225,7 @@ $('.cold-32l-small-slider').slick({
   slidesToScroll: 1,
   asNavFor: '.cold-32l-big-slider',
   dots: false,
+  arrows: false,
   centerMode: true,
   focusOnSelect: true
 });
@@ -233,6 +245,7 @@ $('.bel-18l-small-slider').slick({
   slidesToScroll: 1,
   asNavFor: '.bel-18l-big-slider',
   dots: false,
+  arrows: false,
   centerMode: true,
   focusOnSelect: true
 });
@@ -249,6 +262,7 @@ $('.bel-24l-small-slider').slick({
   slidesToScroll: 1,
   asNavFor: '.bel-24l-big-slider',
   dots: false,
+  arrows: false,
   centerMode: true,
   focusOnSelect: true
 });
@@ -265,6 +279,7 @@ $('.bel-30l-small-slider').slick({
   slidesToScroll: 1,
   asNavFor: '.bel-30l-big-slider',
   dots: false,
+  arrows: false,
   centerMode: true,
   focusOnSelect: true
 });
@@ -281,6 +296,7 @@ $('.av-hanhi-20l-small-slider').slick({
   slidesToScroll: 1,
   asNavFor: '.av-hanhi-20l-big-slider',
   dots: false,
+  arrows: false,
   centerMode: true,
   focusOnSelect: true
 });
@@ -297,6 +313,7 @@ $('.av-fancel-23l-small-slider').slick({
   slidesToScroll: 1,
   asNavFor: '.av-fancel-23l-big-slider',
   dots: false,
+  arrows: false,
   centerMode: true,
   focusOnSelect: true
 });
@@ -313,6 +330,7 @@ $('.av-fancel-37l-small-slider').slick({
   slidesToScroll: 1,
   asNavFor: '.av-fancel-37l-big-slider',
   dots: false,
+  arrows: false,
   centerMode: true,
   focusOnSelect: true
 });
@@ -330,6 +348,7 @@ $('.piv-wein-37l-small-slider').slick({
   slidesToScroll: 1,
   asNavFor: '.piv-wein-37l-big-slider',
   dots: false,
+  arrows: false,
   centerMode: true,
   focusOnSelect: true
 });
@@ -346,6 +365,7 @@ $('.piv-wein-30l-small-slider').slick({
   slidesToScroll: 1,
   asNavFor: '.piv-wein-30l-big-slider',
   dots: false,
+  arrows: false,
   centerMode: true,
   focusOnSelect: true
 });
@@ -362,6 +382,7 @@ $('.piv-bav-30l-small-slider').slick({
   slidesToScroll: 1,
   asNavFor: '.piv-bav-30l-big-slider',
   dots: false,
+  arrows: false,
   centerMode: true,
   focusOnSelect: true
 });
@@ -379,6 +400,7 @@ $('.syr-15l-small-slider').slick({
   slidesToScroll: 1,
   asNavFor: '.syr-15l-big-slider',
   dots: false,
+  arrows: false,
   centerMode: true,
   focusOnSelect: true
 });
@@ -389,3 +411,19 @@ $('.syr-15l-big-slider').slick({
   fade: true,
   asNavFor: '.syr-15l-small-slider'
 });
+
+$(".item__order").on('click', function(e) {
+  e.preventDefault();
+  console.log ($(this).parent().find(".item__name").text())
+  var string = '<form method="post" action="callback.php"><p class="callback__title popup__title">Оставьте ваши контактыне данные и мы свяжемся с вами по поводу заказа!</p><p><label class="visually-hidden" for="top-name">Введите Ваше имя</label><input class="form-input" type="text" name="name" id="top-name" placeholder="Введите Ваше имя" required></p><p><label class="visually-hidden" for="top-phone">Введите Ваш номер телефона</label><input class="form-input" type="tel" name="phone" placeholder="Введите Ваш номер телефона" id="top-phone"></p><input type="hidden" name="item" value="'+$(this).parent().find(".item__name").text()+' '+$(this).parent().find(".item__details--v").text()+'"><p><input class="form-button popup-submit" type="submit" value="Оформить заказ"></p></form>';
+  $.fancybox.open({
+    src : string,
+    type : 'html',
+    smallBtn : true
+  });
+  $("input[type=tel]").mask("+7 (999) 999-99-99");
+});
+
+console.log($("input[type=tel]"));
+
+$("input[type=tel]").mask("+7 (999) 999-99-99");
