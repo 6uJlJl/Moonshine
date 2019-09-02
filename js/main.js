@@ -1,16 +1,12 @@
-// Управление МЕНЮ
-// var navbar = document.querySelector(".header__nav");
-// var sticky = navbar.offsetTop;
+$(window).scroll(function(){
+  $(".header__burger").removeClass("header__burger--active");
+  $(".header__nav").removeClass("show");
+})
 
-// $(window).scroll(function(){
-//   if ($(window).width()>1024) {
-//     if (window.pageYOffset >= sticky) {
-//       navbar.classList.add("sticky")
-//     } else {
-//       navbar.classList.remove("sticky");
-//     };
-//   }
-// })
+$(window).resize(function(){
+  $(".header__burger").removeClass("header__burger--active");
+  $(".header__nav").removeClass("show");
+})
 
 $(".header__burger").click (function(){
   $(".header__burger").toggleClass("header__burger--active")
@@ -415,7 +411,7 @@ $('.syr-15l-big-slider').slick({
 $(".item__order").on('click', function(e) {
   e.preventDefault();
   console.log ($(this).parent().find(".item__name").text())
-  var string = '<form method="post" action="callback.php"><p class="callback__title popup__title">Оставьте ваши контактыне данные и мы свяжемся с вами по поводу заказа!</p><p><label class="visually-hidden" for="top-name">Введите Ваше имя</label><input class="form-input" type="text" name="name" id="top-name" placeholder="Введите Ваше имя" required></p><p><label class="visually-hidden" for="top-phone">Введите Ваш номер телефона</label><input class="form-input" type="tel" name="phone" placeholder="Введите Ваш номер телефона" id="top-phone"></p><input type="hidden" name="item" value="'+$(this).parent().find(".item__name").text()+' '+$(this).parent().find(".item__details--v").text()+'"><p><input class="form-button popup-submit" type="submit" value="Оформить заказ"></p></form>';
+  var string = '<form method="post" action="callback.php"><p class="callback__title popup__title">Оставьте контактные данные и мы свяжемся с вами по поводу заказа!</p><p><label class="visually-hidden" for="top-name">Введите Ваше имя</label><input class="form-input" type="text" name="name" id="top-name" placeholder="Введите Ваше имя" required></p><p><label class="visually-hidden" for="top-phone">Введите Ваш номер телефона</label><input class="form-input" type="tel" name="phone" placeholder="Введите Ваш номер телефона" id="top-phone"></p><input type="hidden" name="item" value="'+$(this).parent().find(".item__name").text()+' '+$(this).parent().find(".item__details--v").text()+'"><p><input class="form-button popup-submit" type="submit" value="Оформить заказ"></p></form>';
   $.fancybox.open({
     src : string,
     type : 'html',
@@ -423,7 +419,5 @@ $(".item__order").on('click', function(e) {
   });
   $("input[type=tel]").mask("+7 (999) 999-99-99");
 });
-
-console.log($("input[type=tel]"));
 
 $("input[type=tel]").mask("+7 (999) 999-99-99");
