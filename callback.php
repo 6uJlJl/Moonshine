@@ -31,7 +31,7 @@ if (isset($_POST['item'])) {
 
 
 
-if (mail("mailtomerkulov@gmail.com", "Заказан обратный звонок!", "Клиент просит перезвонить ему! ".$section.$item."\nИмя: ".$name.". \nТелефон: ".$phone ,"From: info@agmerkulov.ru \r\n"))
+if (mail("gscooter72@mail.ru", "Заказан обратный звонок!", "Клиент просит перезвонить ему! ".$section.$item."\nИмя: ".$name.". \nТелефон: ".$phone ,"From: info@sam-ogon.ru \r\n"))
 { echo "<html><head><meta charset='UTF-8'><meta http-equiv='Refresh' content='3; URL=/'></head><body><p class='callback__title'>Сообщение успешно отправлено!</p><p>Вы будете перемещены через 3 сек. Если не хотите ждать, то <a href='index.html'>нажмите сюда.</a></p></body></html>";
 } else {
   echo "<html><head><meta charset='UTF-8'><meta http-equiv='Refresh' content='3; URL=/'></head><body><p class='callback__title'>При отправке сообщения возникли ошибки!</p><p>Вы будете перемещены через 3 сек. Если не хотите ждать, то <a href='index.html'>нажмите сюда.</a></p></body></html>";

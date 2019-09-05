@@ -751,7 +751,8 @@ p {
 
 .item__big-images {
   width: 270px;
-  min-height: 270px;
+  height: 270px;
+  overflow: hidden;
   margin-bottom: 20px;
 }
 
